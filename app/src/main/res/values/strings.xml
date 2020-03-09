@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">InternshipExercises</string>
+    <string name="label_counter">Label Counter</string>
+    <string name="click">Click</string>
+    <string name="_0">0</string>
+    <string name="number_of_clicks">Number of clicks</string>
+</resources>
