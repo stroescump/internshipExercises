@@ -37,4 +37,11 @@
         android:layout_gravity="center">
     </Button>
 
+    <ImageView
+        android:id="@+id/img_async"
+        tools:src="@tools:sample/avatars"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:contentDescription="@string/todo" />
+
 </LinearLayout>

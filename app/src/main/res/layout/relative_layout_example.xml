@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:padding="@dimen/padding_16dp"
+        android:id="@+id/img"
+        tools:src="@tools:sample/avatars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@id/img"
+        android:paddingStart="@dimen/padding_16dp"
+        android:paddingTop="@dimen/padding_16dp"
+        android:paddingEnd="@dimen/padding_16dp"
+        android:maxLines="1"
+        android:textStyle="bold"
+        android:text="@string/restaurant_title"
+        android:id="@+id/tv_restaurantTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_below="@id/tv_restaurantTitle"
+        android:layout_toEndOf="@id/img"
+        android:paddingStart="@dimen/padding_16dp"
+        android:paddingEnd="@dimen/padding_16dp"
+        android:text="@string/restaurant_description"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:id="@+id/tv_restaurantDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
