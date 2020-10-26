@@ -1,47 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    tools:context=".MainActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorAccent"
+        android:minHeight="?attr/actionBarSize"
+        android:title="@string/restaurant_title"/>
 
     <TextView
-        android:layout_marginBottom="20dp"
         android:id="@+id/labelClicks"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/number_of_clicks"
-        android:layout_gravity="center">
-    </TextView>
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:text="@string/number_of_clicks" />
 
     <TextView
         android:id="@+id/labelCounter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/_0"
+        android:layout_gravity="center"
         android:layout_marginBottom="20dp"
-        android:layout_gravity="center">
-    </TextView>
-
-
+        android:text="@string/_0" />
 
     <Button
         android:id="@+id/incrementBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/click"
+        android:layout_gravity="center"
         android:gravity="center"
-        android:layout_gravity="center">
-    </Button>
+        android:text="@string/click" />
 
     <ImageView
         android:id="@+id/img_async"
-        tools:src="@tools:sample/avatars"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:contentDescription="@string/todo" />
+        android:contentDescription="@string/todo"
+        tools:src="@tools:sample/avatars" />
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/map_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
 </LinearLayout>
